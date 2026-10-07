@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Datenschutzerklärung für die persönliche Google-Anbindung Hermes Workspace.">
+  <title>Datenschutzerklärung – Hermes Workspace</title>
+  <style>
+    :root { color-scheme: light; --paper: #faf9f6; --ink: #202824; --muted: #53605a; --link: #155a48; --line: #d9dfda; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.65 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    main { max-width: 780px; margin: auto; padding: 48px 24px 36px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 48px; }
+    nav a { display: inline-flex; min-height: 44px; align-items: center; }
+    a { color: var(--link); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; }
+    h1 { font-size: clamp(2rem, 6vw, 2.7rem); line-height: 1.15; margin: 0 0 20px; letter-spacing: -.025em; overflow-wrap: anywhere; hyphens: auto; }
+    h2 { margin: 36px 0 12px; font-size: 1.3rem; line-height: 1.3; }
+    p { margin: 0 0 16px; }
+    li { margin: 8px 0; }
+    .eyebrow, footer { color: var(--muted); font-size: .9rem; }
+    footer { border-top: 1px solid var(--line); margin-top: 44px; padding-top: 20px; }
+    @media (max-width: 480px) { main { padding: 24px 20px; } nav { margin-bottom: 28px; } }
+    @media print { body { background: white; font-size: 12pt; } main { max-width: none; padding: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Seitennavigation">
+    <a href="index.html">Übersicht</a>
+    <a href="privacy.html" aria-current="page">Datenschutzerklärung</a>
+  </nav>
+  <p class="eyebrow">Hermes Workspace · persönliche Google-Anbindung</p>
+  <h1>Datenschutzerklärung</h1>
+  <p>Diese Erklärung beschreibt die persönliche, selbst betriebene Google-Anbindung des Inhabers des GitHub-Kontos <a href="https://github.com/DFortmann">DFortmann</a> und die dazugehörige Informationswebsite. Die Anbindung ist kein öffentlich angebotener Dienst.</p>
+
+  <h2>1. Zweck und verarbeitete Daten</h2>
+  <p>Google-Daten werden verarbeitet, um die vom Betreiber beauftragten Aufgaben auszuführen: Dateien finden und auswerten, Dokumente und Tabellen lesen, erstellen oder ändern sowie Arbeitsunterlagen organisieren.</p>
+  <p>Je nach Auftrag können Dateinamen, Dateikennungen, Eigentümer- und Freigabeinformationen, Kontoinformationen zur Prüfung der Verbindung sowie Inhalte von Google-Drive-Dateien, Google Docs und Google Sheets verarbeitet werden. Die erteilte Drive-Berechtigung ist nicht technisch auf eine bestimmte Datei oder einen einzelnen Ordner beschränkt. Welche Inhalte tatsächlich abgerufen werden, hängt vom Auftrag und dessen Ausführung ab.</p>
+  <p>Die aktuelle Anbindung verlangt Berechtigungen für Drive, Docs und Sheets, nicht für Gmail oder Google Kalender. Unabhängig eingerichtete andere Zugänge sind nicht Bestandteil dieser Anbindung.</p>
+
+  <h2>2. Google-Autorisierung und Speicherung</h2>
+  <p>Die Autorisierung erfolgt über Google OAuth. Der Betreiber erteilt die Berechtigungen bei Google; die Anbindung speichert dafür kein Google-Passwort. OAuth-Zugangstokens und Refresh-Tokens werden auf dem privaten Server getrennt nach Hermes-Profil und mit eingeschränkten Dateizugriffsrechten gespeichert.</p>
+  <p>Abgerufene Inhalte, Auswertungsergebnisse und heruntergeladene Dateien können auf dem privaten Server in Arbeitsdateien gespeichert werden. Anweisungen und Tool-Ergebnisse können außerdem Bestandteil gespeicherter Gesprächsverläufe, technischer Protokolle und gegebenenfalls der Assistenten-Erinnerungen sein. Ein Widerruf bei Google löscht diese bereits gespeicherten Kopien nicht automatisch.</p>
+
+  <h2>3. KI-Anbieter und weitere Empfänger</h2>
+  <p>Der Assistent verwendet externe KI-Modelle. Zur Bearbeitung eines Auftrags können Anweisungen, abgerufene Google-Inhalte und Ergebnisse an den jeweils konfigurierten KI-Anbieter übertragen werden. Für das derzeit verwendete Modell ist OpenAI über die Codex-Anbindung konfiguriert; bei einem Wechsel kann ein anderer Anbieter eingesetzt werden. Für die Verarbeitung beim jeweiligen Anbieter gelten dessen Bedingungen und die Einstellungen des verwendeten Kontos. Eine pauschale Zusicherung, dass sämtliche Daten ausschließlich auf dem privaten Server bleiben oder bei Anbietern nie gespeichert werden, wird nicht gegeben.</p>
+  <p>Wenn der Betreiber den Assistenten über einen Messenger oder einen anderen Client verwendet, können die dort angezeigten Eingaben und Antworten auch durch dessen Infrastruktur verarbeitet werden. Beim Zugriff auf Google-Dienste verarbeitet Google selbst die jeweiligen API-Anfragen.</p>
+  <p>Die Anbindung enthält keine Funktion zum Verkauf von Google-Daten, zu deren Nutzung für Werbung oder zum Training eigener allgemeiner KI-Modelle. Informationen werden nicht über diese Informationswebsite oder das zugehörige öffentliche GitHub-Repository veröffentlicht.</p>
+
+  <h2>4. Speicherdauer und Löschung</h2>
+  <p>Zugangstokens werden für die aktive Verbindung aufbewahrt. Arbeitsdateien und Gesprächsverläufe bleiben bis zur Löschung durch den Betreiber gespeichert; eine feste automatische Löschfrist für alle Datenarten ist nicht eingerichtet. Bereits vorhandene Sicherungen oder Kopien bei externen Diensten können eigenen Aufbewahrungs- und Löschregeln unterliegen.</p>
+  <p>Der Betreiber kann die Verbindung in den Google-Kontoeinstellungen unter <a href="https://myaccount.google.com/connections">Verbindungen zu Drittanbietern</a> widerrufen. Zusätzlich sind gegebenenfalls die lokalen Token-Dateien, heruntergeladene Unterlagen, Arbeitsdateien und Gesprächsverläufe zu löschen. Bei gemeinsam verwendeten OAuth-Clients kann der Widerruf mehrere Hermes-Profile betreffen. Daten im Google-Konto werden durch das bloße Trennen der Verbindung nicht gelöscht.</p>
+
+  <h2>5. Besuch dieser Informationswebsite</h2>
+  <p>Die Website wird über GitHub Pages bereitgestellt. Die Seiten enthalten keine eigenen Analysewerkzeuge, keine eingebetteten Drittanbieterressourcen, keine Formulare und keinen Google-Login. Sie setzen selbst keine Cookies und verwenden keinen Browser-Speicher.</p>
+  <p>GitHub kann beim Abruf der Website technische Verbindungs- und Nutzungsdaten verarbeiten, beispielsweise IP-Adresse, Zeitpunkt und angeforderte Seite. Dazu gilt die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Beim Öffnen externer Links gelten die Regeln der jeweiligen Zielwebsite.</p>
+
+  <h2>6. Betreiber, Kontakt und Änderungen</h2>
+  <p>Betreiber: Inhaber des GitHub-Kontos <a href="https://github.com/DFortmann">DFortmann</a>. Hinweise können über die <a href="https://github.com/DFortmann/hermes-workspace-info/issues">Issues des Informationsprojekts</a> übermittelt werden. Diese sind öffentlich. Bitte keine vertraulichen Google-Inhalte, Zugangsdaten oder personenbezogenen Unterlagen dort einstellen.</p>
+  <p>Bei Änderungen der Funktionen, Datenverarbeitung oder eingesetzten Anbieter ist diese Erklärung entsprechend anzupassen.</p>
+  <footer>Stand: 7. Oktober 2026 · <a href="index.html">Zur Übersicht</a></footer>
+</main>
+</body>
+</html>

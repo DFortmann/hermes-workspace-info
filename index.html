@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hermes Workspace: persönliche Anbindung von Google Drive, Docs und Sheets an einen selbst betriebenen Hermes-Assistenten.">
+  <title>Hermes Workspace – persönliche Google-Anbindung</title>
+  <!-- Ein von Google bereitgestelltes Verifizierungs-Meta-Tag kann hier eingefügt werden. -->
+  <style>
+    :root { color-scheme: light; --paper: #faf9f6; --ink: #202824; --muted: #53605a; --link: #155a48; --line: #d9dfda; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.65 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    main { max-width: 780px; margin: auto; padding: 48px 24px 36px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 48px; }
+    nav a { display: inline-flex; min-height: 44px; align-items: center; }
+    a { color: var(--link); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; }
+    h1 { font-size: clamp(2rem, 6vw, 2.7rem); line-height: 1.15; margin: 0 0 20px; letter-spacing: -.025em; overflow-wrap: anywhere; hyphens: auto; }
+    h2 { margin: 36px 0 12px; font-size: 1.3rem; line-height: 1.3; }
+    p { margin: 0 0 16px; }
+    li { margin: 8px 0; }
+    .eyebrow, footer { color: var(--muted); font-size: .9rem; }
+    footer { border-top: 1px solid var(--line); margin-top: 44px; padding-top: 20px; }
+    @media (max-width: 480px) { main { padding: 24px 20px; } nav { margin-bottom: 28px; } }
+    @media print { body { background: white; font-size: 12pt; } main { max-width: none; padding: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Seitennavigation">
+    <a href="index.html" aria-current="page">Übersicht</a>
+    <a href="privacy.html">Datenschutzerklärung</a>
+  </nav>
+  <p class="eyebrow">Persönliche, selbst betriebene Anwendung</p>
+  <h1>Hermes Workspace</h1>
+  <p>Diese persönliche Anbindung verbindet einen selbst betriebenen Hermes-Assistenten mit Google Drive, Google Docs und Google Sheets. Sie wird vom Inhaber des GitHub-Kontos <a href="https://github.com/DFortmann">DFortmann</a> für eigene Arbeitsabläufe verwendet. Sie ist kein öffentlich angebotener Dienst und kein Produkt von Google oder Nous Research.</p>
+
+  <h2>Was die Anbindung macht</h2>
+  <p>Der Assistent kann auf Anweisung des Betreibers Dateien suchen und lesen, Tabellen und Dokumente erstellen oder bearbeiten sowie Dateien organisieren. Dazu gehören beispielsweise Arbeitsübersichten und die Auswertung eigener Unterlagen.</p>
+  <p>Änderungen, Freigaben und Löschungen erfolgen im Rahmen der erteilten Aufträge und Berechtigungen. Die OAuth-Berechtigungen erlauben technisch auch schreibenden Zugriff; diese Informationsseite ist keine zusätzliche Zugriffsbeschränkung.</p>
+
+  <h2>Welche Google-Zugriffe erteilt werden</h2>
+  <ul>
+    <li><strong>Google Drive:</strong> Zugriff auf Dateien und Dateiinformationen einschließlich der durch die erteilte Drive-Berechtigung erlaubten Änderungen.</li>
+    <li><strong>Google Docs:</strong> Lesen, Erstellen und Bearbeiten von Dokumenten.</li>
+    <li><strong>Google Sheets:</strong> Lesen, Erstellen und Bearbeiten von Tabellen.</li>
+  </ul>
+  <p>Die Verbindung wird durch eine Google-OAuth-Freigabe eingerichtet. Google-Passwörter werden dafür nicht im Assistenten gespeichert. Über diese Anbindung werden derzeit keine Gmail- oder Kalenderberechtigungen angefordert.</p>
+
+  <h2>Datenverarbeitung</h2>
+  <p>Zur Bearbeitung eines Auftrags können Google-Inhalte auf dem privaten Server verarbeitet, in Arbeitsdateien oder Gesprächsverläufen gespeichert und an den konfigurierten KI-Anbieter übermittelt werden. Einzelheiten stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+  <p>Diese Website ist nur eine Informationsseite. Sie enthält keinen Google-Login und keine Verbindung zum privaten Assistenten. Google-Dateien, OAuth-Tokens und Gesprächsinhalte werden nicht auf dieser Website veröffentlicht.</p>
+
+  <h2>Betreiber und Kontakt</h2>
+  <p>Betreiber: Inhaber des GitHub-Kontos <a href="https://github.com/DFortmann">DFortmann</a>. Hinweise zur Anbindung können als <a href="https://github.com/DFortmann/hermes-workspace-info/issues">Issue im Informationsprojekt</a> eingereicht werden. GitHub-Issues sind öffentlich: Bitte dort keine Zugangsdaten, privaten Google-Inhalte oder andere vertraulichen Angaben einstellen.</p>
+  <footer>Stand: 7. Oktober 2026 · <a href="privacy.html">Datenschutzerklärung</a></footer>
+</main>
+</body>
+</html>
